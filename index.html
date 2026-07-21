@@ -7,35 +7,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
-    <div class="brand">Warnings From Beyond <span>Control Panel</span></div>
-    <div id="session" class="session">Checking access…</div>
-  </header>
-  <main>
-    <section id="login" class="login-card" hidden>
-      <h1>Control Panel</h1>
-      <p>Project management, Kit operations, and evidence live here.</p>
-      <a class="button" href="https://github.com/login">Sign in with GitHub</a>
-      <p class="small">Access will be limited to approved project members.</p>
-    </section>
-    <section id="panel" hidden>
-      <nav class="tabs" aria-label="Control-panel areas">
-        <button class="active" data-tab="project">Project</button>
-        <button data-tab="pipeline">Pipeline</button>
-        <button data-tab="explorer">Explorer</button>
-        <button data-tab="content">Content</button>
-        <button data-tab="bugs">Bugs</button>
-      </nav>
-      <section id="project" class="tab active">
-        <div class="heading"><div><h1>Project</h1><p>GitHub Project #1 is the durable shared task record.</p></div><a class="button" href="https://github.com/users/Ron-ace/projects/1">Open GitHub Project</a></div>
-        <div class="notice">The GitHub connection is being installed. When it is ready, this view will show the live task board and Kit queue.</div>
-      </section>
-      <section id="pipeline" class="tab"><h1>Pipeline</h1><p>Source, verification, translation, indexing, and downstream publishing status.</p></section>
-      <section id="explorer" class="tab"><h1>Explorer</h1><p>Authorized repository and artifact explorer.</p></section>
-      <section id="content" class="tab"><h1>Content</h1><p>Approved content controls and publication status.</p></section>
-      <section id="bugs" class="tab"><h1>Bugs</h1><p>Blockers and verification failures linked to GitHub Issues.</p></section>
-    </section>
+  <main class="landing">
+    <h1>Warnings From Beyond</h1>
+    <a class="button" href="https://github.com/login">Sign in</a>
   </main>
-  <script src="app.js"></script>
 </body>
 </html>
