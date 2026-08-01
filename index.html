@@ -3,34 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Warnings From Beyond — Control Panel</title>
+  <title>Warnings From Beyond</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <section id="login" class="landing">
-      <button id="sign-in" class="button" type="button">Sign in</button>
-    </section>
-
-    <section id="panel" class="panel" hidden>
-      <nav class="tabs" aria-label="Control-panel areas">
-        <button class="active" data-tab="project">Project</button>
-        <button data-tab="pipeline">Pipeline</button>
-        <button data-tab="explorer">Explorer</button>
-        <button data-tab="content">Content</button>
-        <button data-tab="bugs">Bugs</button>
-      </nav>
-      <section id="project" class="tab active">
-        <h1>Project</h1>
-        <p>Tasks, milestones, and current work for Warnings From Beyond.</p>
-        <a class="button" href="https://github.com/users/Ron-ace/projects/1">Open GitHub Project</a>
-      </section>
-      <section id="pipeline" class="tab"><h1>Pipeline</h1><p>Source, verification, translation, indexing, and publishing status.</p></section>
-      <section id="explorer" class="tab"><h1>Explorer</h1><p>Repository and artifact explorer.</p></section>
-      <section id="content" class="tab"><h1>Content</h1><p>Approved content controls and publication status.</p></section>
-      <section id="bugs" class="tab"><h1>Bugs</h1><p>Blockers and verification failures linked to GitHub Issues.</p></section>
-    </section>
+  <main class="landing">
+    <a class="button" href="http://127.0.0.1:8080/">Sign in</a>
   </main>
-  <script src="app.js"></script>
 </body>
 </html>
