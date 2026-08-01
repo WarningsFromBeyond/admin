@@ -1,10 +1,12 @@
 const login = document.querySelector("#login");
 const panel = document.querySelector("#panel");
 const signOut = document.querySelector("#sign-out");
+const topbar = document.querySelector("#topbar");
 
 function openPanel() {
   login.hidden = true;
   panel.hidden = false;
+  topbar.hidden = false;
   signOut.hidden = false;
   sessionStorage.setItem("wfb-admin-open", "yes");
 }
@@ -12,6 +14,7 @@ function openPanel() {
 function closePanel() {
   sessionStorage.removeItem("wfb-admin-open");
   panel.hidden = true;
+  topbar.hidden = true;
   signOut.hidden = true;
   login.hidden = false;
 }

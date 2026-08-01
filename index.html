@@ -7,16 +7,13 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="topbar">
+  <header id="topbar" class="topbar" hidden>
     <div class="brand">Warnings From Beyond <span>Control Panel</span></div>
     <button id="sign-out" class="text-button" type="button" hidden>Sign out</button>
   </header>
   <main>
     <section id="login" class="landing">
-      <h1>Warnings From Beyond</h1>
-      <p>Sign in to open the internal project control panel.</p>
       <button id="sign-in" class="button" type="button">Sign in</button>
-      <p id="auth-status" class="status" role="status"></p>
     </section>
 
     <section id="panel" class="panel" hidden>
