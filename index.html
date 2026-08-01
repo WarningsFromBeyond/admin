@@ -3,13 +3,103 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Warnings From Beyond — Control Panel</title>
+  <meta name="description" content="Warnings From Beyond project control panel">
+  <title>Warnings From Beyond — Admin</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="landing">
-    <h1>Warnings From Beyond</h1>
-    <a class="button" href="https://github.com/login">Sign in</a>
-  </main>
+  <header class="topbar">
+    <a class="brand" href="#project" aria-label="Warnings From Beyond admin home">
+      <span class="brand-mark">WFB</span>
+      <span>Warnings From Beyond <small>Admin</small></span>
+    </a>
+    <div class="topbar-actions">
+      <span class="environment"><span class="status-dot"></span>Control panel</span>
+      <a class="site-link" href="https://warningsfrombeyond.com">View public site</a>
+    </div>
+  </header>
+
+  <div class="shell">
+    <nav class="sidebar" aria-label="Admin areas">
+      <p class="nav-label">Workspace</p>
+      <a class="nav-item active" href="#project" data-tab="project">Project</a>
+      <a class="nav-item" href="#kit" data-tab="kit">Kit</a>
+      <a class="nav-item" href="#data" data-tab="data">Data</a>
+      <a class="nav-item" href="#website" data-tab="website">Website</a>
+      <a class="nav-item" href="#publishing" data-tab="publishing">Publishing</a>
+      <a class="nav-item" href="#operations" data-tab="operations">Operations</a>
+      <div class="sidebar-foot"><span>Canonical admin</span><strong>admin.warningsfrombeyond.com</strong></div>
+    </nav>
+
+    <main class="content">
+      <section class="tab active" id="project" aria-labelledby="project-title">
+        <div class="page-heading">
+          <div><p class="eyebrow">Command center</p><h1 id="project-title">Project</h1><p class="lede">The main workspace for Warnings From Beyond, the Codex, and Kit.</p></div>
+          <a class="button primary" href="https://github.com/users/Ron-ace/projects/1">Open project board</a>
+        </div>
+        <div class="metrics">
+          <article><strong>100</strong><span>Codex slots</span></article>
+          <article><strong>2,289</strong><span>Readings indexed</span></article>
+          <article><strong>1,512</strong><span>Source segments</span></article>
+          <article><strong>10</strong><span>Books registered</span></article>
+        </div>
+        <div class="grid">
+          <article class="card featured"><p class="card-kicker">Current focus</p><h2>Secure the canonical source</h2><p>Reconcile Kit’s committed work with GitHub, then continue the Warnings From Beyond import and Bible hierarchy migration.</p><a href="#operations" data-tab-link="operations">Review operations →</a></article>
+          <article class="card"><p class="card-kicker">Source of truth</p><h2>Main repository</h2><p>Versioned source, manifests, schema, provenance, and project documentation.</p><a href="https://github.com/WarningsFromBeyond/Main">Open Main →</a></article>
+          <article class="card"><p class="card-kicker">Public work</p><h2>Warnings From Beyond</h2><p>Review the current published reading experience and production content.</p><a href="https://warningsfrombeyond.com">Open website →</a></article>
+          <article class="card"><p class="card-kicker">Administration</p><h2>Control-panel source</h2><p>This domain is the permanent entry point. GitHub is a tool within it, not the sign-in destination.</p><a href="https://github.com/WarningsFromBeyond/admin">Open repository →</a></article>
+        </div>
+      </section>
+
+      <section class="tab" id="kit" aria-labelledby="kit-title">
+        <div class="page-heading"><div><p class="eyebrow">Private GPU worker</p><h1 id="kit-title">Kit</h1><p class="lede">Model, agent gateway, evidence logs, and controlled project tools.</p></div></div>
+        <div class="grid">
+          <article class="card featured"><p class="card-kicker">Worker route</p><h2>Agent gateway</h2><p>Operational tasks use <code>/agent</code>. Raw model chat does not have filesystem or database tools.</p></article>
+          <article class="card"><p class="card-kicker">Model</p><h2>Qwen 3.6 35B</h2><p>Served on the private RunPod worker with the shared Kit brain and retrievable memory.</p></article>
+          <article class="card"><p class="card-kicker">Persistent workspace</p><h2>kit_volume</h2><p>The project, databases, models, source material, and logs persist under <code>/workspace</code>.</p></article>
+          <article class="card"><p class="card-kicker">Safety</p><h2>Evidence first</h2><p>Controlled file and SQL tools, protected paths, verification logs, and explicit publication gates.</p></article>
+        </div>
+      </section>
+
+      <section class="tab" id="data" aria-labelledby="data-title">
+        <div class="page-heading"><div><p class="eyebrow">Canonical material</p><h1 id="data-title">Data</h1><p class="lede">Faithful V1 sources, normalized metadata, provenance, and rebuildable relationships.</p></div></div>
+        <div class="grid">
+          <article class="card"><p class="card-kicker">Imported</p><h2>The Codex</h2><p>100 fixed slots, six sections, and 777 verified English-spine readings.</p></article>
+          <article class="card"><p class="card-kicker">Imported</p><h2>Books 6–8</h2><p>Relation of Her Own Life, Life of Anne Catherine Emmerich, and Imitation of Christ.</p></article>
+          <article class="card"><p class="card-kicker">Imported · migration pending</p><h2>Douay–Rheims Bible</h2><p>1,334 numbered readings across 73 biblical books, awaiting final testament hierarchy.</p></article>
+          <article class="card featured"><p class="card-kicker">Next import</p><h2>Warnings From Beyond</h2><p>Source candidates are preserved. Import begins with a locked manifest and sidebar/avatar regression checks.</p></article>
+        </div>
+      </section>
+
+      <section class="tab" id="website" aria-labelledby="website-title">
+        <div class="page-heading"><div><p class="eyebrow">Reading experience</p><h1 id="website-title">Website</h1><p class="lede">Public delivery, admin controls, authentication, accessibility, and deployment health.</p></div><a class="button primary" href="https://warningsfrombeyond.com">Open site</a></div>
+        <div class="grid">
+          <article class="card"><p class="card-kicker">Production</p><h2>Main website</h2><p>The current public GitHub Pages deployment and custom domain.</p><a href="https://github.com/WarningsFromBeyond/WarningsFromBeyond.github.io">Open repository →</a></article>
+          <article class="card"><p class="card-kicker">Admin</p><h2>This control panel</h2><p>The stable administrative landing page for every project area.</p><a href="https://github.com/WarningsFromBeyond/admin">Open source →</a></article>
+          <article class="card"><p class="card-kicker">Authentication</p><h2>Supabase</h2><p>Existing publishing-site email authentication remains separate and unchanged.</p></article>
+        </div>
+      </section>
+
+      <section class="tab" id="publishing" aria-labelledby="publishing-title">
+        <div class="page-heading"><div><p class="eyebrow">Rebuildable outputs</p><h1 id="publishing-title">Publishing</h1><p class="lede">Website, PDFs, social posts, audio, illustrated editions, and future apps.</p></div></div>
+        <div class="grid">
+          <article class="card"><p class="card-kicker">Rule</p><h2>Canonical source first</h2><p>Downstream products are rebuilt from approved source; they are never edited as source truth.</p></article>
+          <article class="card"><p class="card-kicker">V1</p><h2>Faithful editions</h2><p>Traceable public-domain text with source identity, hashes, and citations.</p></article>
+          <article class="card"><p class="card-kicker">V2</p><h2>Optional enrichment</h2><p>Scenes, entities, summaries, visuals, and comics remain evidence-linked and never mutate V1.</p></article>
+        </div>
+      </section>
+
+      <section class="tab" id="operations" aria-labelledby="operations-title">
+        <div class="page-heading"><div><p class="eyebrow">Recovery and control</p><h1 id="operations-title">Operations</h1><p class="lede">Repository integrity, backups, deployment health, and controlled continuation.</p></div></div>
+        <ol class="runbook">
+          <li><span>01</span><div><strong>Snapshot Kit</strong><p>Create SQLite-safe backups and preserve current repository heads.</p></div></li>
+          <li><span>02</span><div><strong>Reconcile Git</strong><p>Push Kit’s unpublished Main, Codex, and worker commits; reconcile the newer Ron branch.</p></div></li>
+          <li><span>03</span><div><strong>Import Warnings</strong><p>Approve the locked source manifest, then import with regression verification.</p></div></li>
+          <li><span>04</span><div><strong>Migrate the Bible</strong><p>Move to Testament → Bible book → numbered reading without breaking provenance.</p></div></li>
+        </ol>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
 </body>
 </html>
