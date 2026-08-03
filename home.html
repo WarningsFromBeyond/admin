@@ -18,7 +18,7 @@
     let savedPath = localStorage.getItem("wfb-admin-route") || "/";
     if (!savedPath.startsWith("/") || savedPath.startsWith("//")) savedPath = "/";
     const liveAdmin = new URL(kitOrigin + savedPath);
-liveAdmin.searchParams.set("admin_build", "833a55fa");
+liveAdmin.searchParams.set("admin_build", "6d4193c4");
     frame.src = liveAdmin.toString();
     window.addEventListener("message", (event) => {
       if (event.origin !== kitOrigin || event.data?.type !== "wfb-admin-route") return;
